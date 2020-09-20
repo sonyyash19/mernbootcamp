@@ -31,7 +31,7 @@ exports.updateUser = (req, res) => {
      (err, user) => {
          if(err){
              return res.status(400).json({
-                error: "You are not authorised to upate the user"
+                error: "You are not authorised to update the user"
              });
          }
         user.salt  = undefined;
